@@ -15,7 +15,7 @@ let package = Package(
             path: "LineSDK/LineSDK",
             exclude: ["LineSDKUI"],
             resources: [
-                .process("LineSDK/LineSDK/Resource.bundle/**/**")
+                .process("Resource.bundle")
             ]
         ),
         .target(
@@ -24,7 +24,7 @@ let package = Package(
             path: "LineSDK/LineSDKObjC",
             exclude: ["LineSDKUI"],
             resources: [
-                .process("LineSDK/LineSDK/Resource.bundle")
+                .process("Resource.bundle")
             ]
         )
     ]
