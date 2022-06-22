@@ -13,7 +13,8 @@ let package = Package(
         .target(
             name: "LineSDK",
             path: "LineSDK/LineSDK",
-            exclude: ["LineSDKUI"]
+            exclude: ["LineSDKUI"],
+            resources: [.process("Resources")]
         ),
         .target(
             name: "LineSDKObjC",
