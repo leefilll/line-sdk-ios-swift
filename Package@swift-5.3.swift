@@ -17,7 +17,7 @@ let package = Package(
                 "Info.plist"
             ],
             resources: [
-                .process("LineSDK/LineSDK/Resource.bundle")
+                .process("Resources")
             ]
         ),
         .target(
