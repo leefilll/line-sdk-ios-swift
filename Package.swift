@@ -13,19 +13,13 @@ let package = Package(
         .target(
             name: "LineSDK",
             path: "LineSDK/LineSDK",
-            exclude: ["LineSDKUI"],
-            resources: [
-                .process("LineSDK/LineSDK/Resource.bundle/**")
-            ]
+            exclude: ["LineSDKUI"]
         ),
         .target(
             name: "LineSDKObjC",
             dependencies: ["LineSDK"],
             path: "LineSDK/LineSDKObjC",
-            exclude: ["LineSDKUI"],
-            resources: [
-                .process("LineSDK/LineSDK/Resource.bundle")
-            ]
+            exclude: ["LineSDKUI"]
         )
     ]
 )
